@@ -15,10 +15,15 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
 
 			['name'    => 'Nguyen Duy Minh',
-             'username'=> 'duyminh',
-             'email'   => 'duyminh@gmail.com',
+             'username'=> 'admin',
+             'email'   => 'admin@gmail.com',
 			 'password'=> bcrypt('password'),
-             'level'   => 1]
+             'level'   => 1],
+            ['name'    => 'Hoang van Tung',
+             'username'=> 'user',
+             'email'   => 'user@gmail.com',
+             'password'=> bcrypt('password'),
+             'level'   => 0]
 		]);
     }
 }
